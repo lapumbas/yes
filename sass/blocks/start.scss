@@ -1,0 +1,71 @@
+.start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start__picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.start__circle-1 {
+  position: absolute;
+  left: 14px;
+  bottom: 30px;
+}
+
+.start__circle-2 {
+  position: absolute;
+  right: 18px;
+  top: 68px;
+}
+
+.start__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "2" */
+  letter-spacing: 1.2px;
+  /* Text style for "-месячный" */
+  letter-spacing: 1.2px;
+  margin-top: 12px;
+}
+
+.start__accelerated {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "У, скоренн" */
+  letter-spacing: 0.9px;
+}
+
+.start__stroke {
+  margin-top: 18px;
+}
+
+.start__slogan {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #141414;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  /* Text style for "О, свойте" */
+  letter-spacing: 0.7px;
+  margin-top: 14px;
+}
+
+.start__button {
+  margin-top: 12px;
+}

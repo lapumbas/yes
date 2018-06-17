@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Light.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Gilroy - Extra Bold';
+  src: url("../fonts/Gilroy-ExtraBold.woff2");
+  font-weight: 400;
+}
+
+@import 'blocks/main';
+@import 'blocks/header';
+@import 'blocks/start';
+@import 'blocks/stroke';
+@import 'blocks/button';
+@import 'blocks/situation';
+@import 'blocks/predict';
+
+
+body {
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+* before,
+* after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  box-sizing: content-box;
+}
+
+.container {
+  width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid rgb(171, 170, 170);  
+}

@@ -1,0 +1,408 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Gilroy';
+  src: url("../fonts/Gilroy-Light.woff2");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Gilroy - Extra Bold';
+  src: url("../fonts/Gilroy-ExtraBold.woff2");
+  font-weight: 400; }
+
+.main__situation {
+  margin-top: 84px; }
+
+.main__predict {
+  margin-top: 64px; }
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 290px; }
+
+.header__logo {
+  width: 63px;
+  height: 23px; }
+
+.header__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.header__phone {
+  margin: 0;
+  padding: 0;
+  color: #141414;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-align: right; }
+
+.header__recall {
+  display: inline-block;
+  text-decoration: none;
+  text-align: right;
+  color: #f5112c;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  border-bottom: 2px solid #f5112c50; }
+
+.start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.start__picture {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.start__circle-1 {
+  position: absolute;
+  left: 14px;
+  bottom: 30px; }
+
+.start__circle-2 {
+  position: absolute;
+  right: 18px;
+  top: 68px; }
+
+.start__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "2" */
+  letter-spacing: 1.2px;
+  /* Text style for "-месячный" */
+  letter-spacing: 1.2px;
+  margin-top: 12px; }
+
+.start__accelerated {
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "У, скоренн" */
+  letter-spacing: 0.9px; }
+
+.start__stroke {
+  margin-top: 18px; }
+
+.start__slogan {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #141414;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  /* Text style for "О, свойте" */
+  letter-spacing: 0.7px;
+  margin-top: 14px; }
+
+.start__button {
+  margin-top: 12px; }
+
+.stroke {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 64px;
+  height: 7px;
+  background-color: #f5112c; }
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 290px;
+  height: 62px;
+  -webkit-box-shadow: 0 10px 18px rgba(246, 27, 60, 0.55);
+          box-shadow: 0 10px 18px rgba(246, 27, 60, 0.55);
+  border-radius: 31px;
+  background-color: #f5112c;
+  color: #ffffff;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  /* Text style for "З, аписать" */
+  letter-spacing: 0.7px; }
+
+.situation {
+  width: 100%;
+  background: url("../../img/big-ellipce.svg") no-repeat;
+  background-size: cover;
+  background-position-x: -700px;
+  padding-top: 88px;
+  padding-bottom: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.situation__question {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: absolute;
+  opacity: 0.09;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 200px;
+  font-weight: 400;
+  text-transform: uppercase;
+  top: -70px;
+  right: 5px;
+  z-index: 3; }
+
+.situation__slogan {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "Б, ывали л" */
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.situation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.situation__item {
+  margin-top: 40px; }
+
+.situation__number {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 18.76px;
+  letter-spacing: 3.58px;
+  text-align: center; }
+
+.situation__dot {
+  color: #f5112c; }
+
+.situation__text {
+  margin: 0;
+  padding: 0;
+  color: #1b1b1b;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-top: 15px; }
+
+.situation__image {
+  margin-top: 20px; }
+
+.predict {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.predict__title {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /* Text style for "М, ы преду" */
+  letter-spacing: 1.2px;
+  text-align: center; }
+
+.predict__stroke {
+  margin-top: 14px; }
+
+.predict__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.predict__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-top: 25px;
+  padding-top: 28px; }
+  .predict__item::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: block;
+    background: url("../../img/predict-circle.svg") no-repeat center;
+    top: 5px; }
+
+.predict__key {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  color: #141414;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  text-align: center; }
+
+.predict__value {
+  width: 180px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #141414;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  margin-top: 18px; }
+
+body {
+  font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  margin: 0;
+  padding: 0; }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+*,
+* before,
+* after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.content-box-component {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
+.container {
+  width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wrapper {
+  width: 320px;
+  margin: 0 auto;
+  border: 1px solid #abaaaa; }

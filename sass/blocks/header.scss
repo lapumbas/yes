@@ -1,0 +1,44 @@
+.header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.header__logo {
+  width: 63px;
+  height: 23px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__phone {
+  margin: 0;
+  padding: 0;
+  color: #141414;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-align: right;
+}
+
+.header__recall {
+  display: inline-block;
+  text-decoration: none;
+  text-align: right;
+  color: #f5112c;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  border-bottom: 2px solid #f5112c50
+
+}
