@@ -1,0 +1,55 @@
+@mixin default-flex() {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.teachers__title {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.teachers__list {
+  @include default-flex();
+}
+
+.teachers__item {
+  @include default-flex();
+  padding-top: 40px;
+}
+
+.teachers__name {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #141414;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.7px;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.teachers__text {
+  @include default-flex();
+  color: #141414;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-align: left;
+  margin-top: 5px;
+}

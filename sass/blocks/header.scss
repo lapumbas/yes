@@ -5,12 +5,8 @@
   z-index: 2;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 290px;
-}
-
-.header__logo {
-  width: 63px;
-  height: 23px;
 }
 
 .header__contacts {

@@ -1,0 +1,84 @@
+@mixin mp() {
+  margin: 0;
+  padding: 0;
+}
+
+%fb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.process {
+  @extend %fb;
+  background: url("../../img/big-gray-circle.svg") no-repeat center;
+  background-size: cover;
+  padding-top: 86px;
+  padding-bottom: 100px;
+}
+
+.process__title {
+  @include mp();
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+.process__stroke {
+  margin-top: 20px;
+}
+
+.process__list {
+  @extend %fb;
+  @include mp();
+  list-style: none;
+}
+
+.process__item {
+  @extend %fb;
+  @include mp();
+  margin-top: 40px;
+}
+
+.process__feature {
+  @extend %fb;
+  @include mp();
+  color: #141414;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 10px;
+    background: url("../../img/red-arrow.svg") no-repeat 0 0;
+    top: 4px;
+    left: -20px;
+  }
+}
+
+.process__text {
+  @extend %fb;
+  @include mp();
+  color: #141414;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.process__image {
+  margin-top: 23px;
+}

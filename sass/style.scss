@@ -17,6 +17,15 @@
 @import 'blocks/button';
 @import 'blocks/situation';
 @import 'blocks/predict';
+@import 'blocks/teachers';
+@import 'blocks/bigben';
+@import 'blocks/included';
+@import 'blocks/process';
+@import 'blocks/reviews';
+@import 'blocks/free';
+@import 'blocks/footer';
+@import 'blocks/social';
+@import 'blocks/slider';
 
 
 body {
@@ -32,15 +41,15 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-  
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
-  
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -67,6 +76,7 @@ html {
 
 .container {
   width: 320px;
+  // width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
@@ -75,7 +85,7 @@ html {
 }
 
 .wrapper {
-  width: 320px;
-  margin: 0 auto;
-  border: 1px solid rgb(171, 170, 170);  
+  // width: 320px;
+  // margin: 0 auto;
+  // border: 1px solid rgb(171, 170, 170);
 }

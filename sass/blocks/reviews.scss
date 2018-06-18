@@ -1,0 +1,85 @@
+@mixin mp() {
+  margin: 0;
+  padding: 0;
+}
+
+%fb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews {
+  @include mp();
+  @extend %fb;
+  margin-top: 69px;
+}
+
+.reviews__title {
+  @include mp();
+  @extend %fb;
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+.reviews__stroke {
+  margin-top: 15px;
+}
+
+.reviews__slider {}
+
+.reviews__list {
+  @include mp();
+  @extend %fb;
+  list-style: none;
+}
+
+.reviews__item {
+  @include mp();
+  @extend %fb;
+}
+
+.reviews__photo {
+  margin-top: 49px;
+}
+
+.reviews__name {
+  @include mp();
+  @extend %fb;
+  color: #141414;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 27px;
+}
+
+.reviews__text {
+  @include mp();
+  @extend %fb;
+  text-align: center;
+  color: #141414;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  margin-top: 10px;
+}
+
+.reviews__link {
+  @include mp();
+  color: #f5112c;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-bottom: 2px solid #f5112c50;
+}

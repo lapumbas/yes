@@ -1,0 +1,75 @@
+@mixin mp() {
+  margin: 0;
+  padding: 0;
+}
+
+%fb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.free {
+  padding-bottom: 128px;
+}
+
+.free__picture {
+  position: relative;
+  min-height: 200px;
+  background: url("../../img/plane.png") no-repeat center 0;
+}
+
+.free__wave-1 {
+  position: absolute;
+  top: 27px;
+  right: 14px;
+}
+
+.free__wave-2 {
+  position: absolute;
+  top: 170px;
+  left: 13px;
+}
+
+.free__circle-1 {
+  position: absolute;
+  top: 71px;
+  right: 19px;
+}
+
+.free__circle-2 {
+  position: absolute;
+  top: 484px;
+  left: 41px;
+}
+
+.free__title {
+  @include mp();
+  color: #000000;
+  font-family: "Gilroy - Extra Bold";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-align: center;
+}
+
+.free_stroke {
+  margin-top: 18px;
+}
+
+.free__text {
+  @include mp();
+  color: #141414;
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.free__button {
+  margin-top: 20px;
+}
