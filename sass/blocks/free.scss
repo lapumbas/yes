@@ -11,24 +11,30 @@
 
 .free {
   padding-bottom: 128px;
+  position: relative;
 }
 
 .free__picture {
   position: relative;
-  min-height: 200px;
-  background: url("../../img/plane.png") no-repeat center 0;
+  width: 290px;
+  height: 200px;
+  display: flex;
+  background: url("../../img/plane.png") no-repeat center;
+  background-size: cover;
 }
 
 .free__wave-1 {
   position: absolute;
   top: 27px;
   right: 14px;
+  width: 80px;
 }
 
 .free__wave-2 {
   position: absolute;
   top: 170px;
   left: 13px;
+  width: 80px;
 }
 
 .free__circle-1 {
@@ -44,10 +50,10 @@
 }
 
 .free__title {
-  @include mp();
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-family: "Gilroy - Extra Bold";
-  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -59,12 +65,11 @@
 }
 
 .free__text {
-  @include mp();
+  margin: 0;
+  padding: 0;
   color: #141414;
   font-family: Gilroy;
-  font-size: 14px;
   font-weight: 300;
-  line-height: 18px;
   letter-spacing: 0.7px;
   text-align: center;
   margin-top: 20px;
@@ -72,4 +77,65 @@
 
 .free__button {
   margin-top: 20px;
+}
+
+@media (min-width: $tablet) {
+  $header-font-size: 30px;
+  .free__picture {
+    position: absolute;
+    display: flex;
+    width: 680px;
+    height: 400px;
+    left: -270px;
+    top: -50px;
+  }
+  .free__wrapper {
+    padding-left: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .free__title {
+    text-align: left;
+  }
+  .free__text {
+    text-align: left;
+  }
+  .free__wave-1 {
+    top: -130px;
+    right: -250px;
+    width: 145px;
+  }
+  .free__wave-2 {
+    top: -50px;
+    left: 500px;
+    width: 145px;
+  }
+  .free__circle-1 {
+    top: 71px;
+    right: -290px;
+  }
+  .free__circle-2 {
+    top: 334px;
+    left: 550px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .free__title {
+  }
+  .free__wrapper {
+    padding-left: 622px;
+  }
+  .free__picture {
+    left: -70px;
+    top: -50px;
+  }
+  .free__button {
+    margin-top: 90px;
+  }
+  .free__circle-1 {
+    top: 0px;
+    right: -290px;
+  }
 }

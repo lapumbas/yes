@@ -1,3 +1,5 @@
+@import 'variables';
+
 .stroke {
   display: flex;
   width: 64px;
@@ -5,4 +7,11 @@
   background-color: #f5112c;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: $tablet) {
+  .stroke {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

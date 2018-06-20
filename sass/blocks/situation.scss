@@ -1,8 +1,8 @@
+@import 'variables';
 .situation {
   width: 100%;
-  background: url("../../img/big-ellipce.svg") no-repeat;
-  background-size: cover;
-  background-position-x: -700px;
+  background: url("../../img/big-ellipce.svg") no-repeat center;
+  background-size: cover; // background-position-x: -700px;
   padding-top: 88px;
   padding-bottom: 94px;
   display: flex;
@@ -31,7 +31,6 @@
   padding: 0;
   color: #000000;
   font-family: "Gilroy - Extra Bold";
-  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   /* Text style for "Б, ывали л" */
@@ -76,9 +75,7 @@
   margin: 0;
   padding: 0;
   color: #1b1b1b;
-  font-size: 14px;
   font-weight: 300;
-  line-height: 18px;
   letter-spacing: 0.7px;
   text-align: center;
   margin-top: 15px;
@@ -86,4 +83,72 @@
 
 .situation__image {
   margin-top: 20px;
+}
+
+@media (min-width: $tablet) {
+  .situation__slogan {
+    text-align: left;
+  }
+  .situation__question {
+    right: 400px;
+  }
+  .situation__list {
+    align-items: stretch;
+  }
+  .situation__item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .situation__image--left {
+    order: -1;
+    margin-right: 15px;
+  }
+  .situation__number {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+  }
+  .situation__number--left {
+    left: 325px;
+    display: inline-block;
+    width: 100px;
+  }
+  .situation__text {
+    text-align: left;
+    width: 300px;
+  }
+  .situation__image {
+    display: block;
+    width: 360px;
+    flex: 1;
+  }
+  .situation__wrapper {
+    position: relative;
+    flex: 1;
+  }
+}
+
+@media (min-width: $desktop) {
+  .situation {
+    background: url("../../img/big-ellipce.svg") no-repeat -1300px center;
+    background-size: cover;
+  }
+  .situation__image {
+    flex: 0.8;
+  }
+  .situation__text--left {
+    padding-left: 380px;
+    padding-right: 20px;
+    width: 653px;
+  }
+  .situation__number--left {
+    left: 620px;
+  }
+  .situation__item {
+    margin-top: 0px;
+  }
+  .situation__question {
+    top: 80px;
+    right: 600px;
+  }
 }

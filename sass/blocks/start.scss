@@ -1,7 +1,13 @@
+@import 'variables';
 .start {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.start__main-pic {
+  width: 243px;
+  height: 346px;
 }
 
 .start__picture {
@@ -22,18 +28,19 @@
   top: 68px;
 }
 
+.start__wave {
+  display: none;
+}
+
 .start__title {
   padding: 0;
   margin: 0;
   text-align: center;
   color: #000000;
   font-family: "Gilroy - Extra Bold";
-  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
-  /* Text style for "2" */
   letter-spacing: 1.2px;
-  /* Text style for "-месячный" */
   letter-spacing: 1.2px;
   margin-top: 12px;
 }
@@ -58,14 +65,100 @@
   text-align: center;
   color: #141414;
   font-family: Gilroy;
-  font-size: 14px;
   font-weight: 300;
-  line-height: 18px;
-  /* Text style for "О, свойте" */
   letter-spacing: 0.7px;
   margin-top: 14px;
 }
 
 .start__button {
   margin-top: 12px;
+}
+
+@media (min-width: $tablet) {
+  .start {
+    width: 100%;
+    flex-direction: row;
+    min-height: 355px;
+    position: relative;
+  }
+  .start__picture {
+    width: 380px;
+    justify-content: flex-start;
+  }
+  .start__main-pic {
+    position: absolute;
+    left: -50px;
+    top: -300px;
+    width: 365px;
+    height: 488px;
+  }
+  .start__circle-1 {
+    left: -150px;
+    bottom: 0;
+    transform: scale(1.5);
+  }
+  @keyframes circlemove {
+    from {
+      right: 500px;
+    }
+    to {
+      right: -250px;
+    }
+  }
+  .start__circle-2 {
+    right: -250px;
+    top: -200px;
+    animation: circlemove 2s ease;
+  }
+  .start__wave {
+    position: absolute;
+    right: -450px;
+    top: 40px;
+    display: block;
+    width: 145px;
+  }
+  .start__text {
+    display: flex;
+    flex-direction: column;
+    width: 407px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  .start__title {
+    text-align: left;
+    margin: 0;
+  }
+  .start__slogan {
+    text-align: left;
+  }
+  .start__button {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .start__text {
+    width: 555px;
+  }
+  .start__accelerated {
+    font-size: 34px;
+  }
+  .start__picture {
+    width: 680px;
+    justify-content: center;
+  }
+  .start__main-pic {
+    position: absolute;
+    left: 0px;
+    top: -500px;
+    width: 688px;
+    height: 794px;
+  }
+  .start__circle-2 {
+    top: -300px;
+  }
+  .start__wave {
+    top: 80px;
+  }
 }

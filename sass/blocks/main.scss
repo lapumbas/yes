@@ -1,3 +1,4 @@
+@import 'variables';
 .main__situation {
   margin-top: 84px;
 }
@@ -23,5 +24,48 @@
 }
 
 .main__free {
-  margin-top: 90px;
+  margin-top: 50px;
+}
+
+.main__english-yes {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .main__start {
+    margin-top: 100px;
+  }
+
+  .main__predict {
+    margin-top: 0;
+  }
+
+  .main__english-yes {
+    display: flex;
+    position: absolute;
+    top: 150px;
+  }
+  .main__included {
+    margin-top: 90px;
+  }
+
+  .main__process {
+    margin-top: 200px;
+  }
+
+  .main__free {
+    margin-top: 270px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main__start {
+    margin-top: 250px;
+  }
+  .main__teachers {
+    margin-top: 200px;
+  }
+  .main__included {
+    margin-top: 200px;
+  }
 }

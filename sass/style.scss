@@ -10,6 +10,7 @@
   font-weight: 400;
 }
 
+@import 'variables';
 @import 'blocks/main';
 @import 'blocks/header';
 @import 'blocks/start';
@@ -26,11 +27,11 @@
 @import 'blocks/footer';
 @import 'blocks/social';
 @import 'blocks/slider';
-
-
+@import 'blocks/logo';
 body {
   font-family: 'Gilroy', Arial, Helvetica, sans-serif;
   font-size: 14px;
+  line-height: 18px;
   font-weight: 400;
   color: black;
   margin: 0;
@@ -41,15 +42,12 @@ body {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -75,8 +73,7 @@ html {
 }
 
 .container {
-  width: 320px;
-  // width: 100%;
+  width: 320px; // width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
@@ -84,8 +81,39 @@ html {
   margin-right: auto;
 }
 
-.wrapper {
-  // width: 320px;
-  // margin: 0 auto;
-  // border: 1px solid rgb(171, 170, 170);
+@media (min-width: $tablet) {
+  $text-font-size: 16px;
+  $text-line-height: 24px;
+  $header-font-size: 30px;
+  $header-line-height: 36px;
+  .container {
+    width: $tablet; // background: rgba(89, 72, 241, 0.112);
+  }
+  body {
+    font-size: $text-font-size;
+    line-height: $text-line-height;
+  }
+  h2 {
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    line-height: $header-line-height;
+  }
+}
+
+@media (min-width: $desktop) {
+  $text-font-size: 18px;
+  $text-line-height: 28px;
+  $header-font-size: 45px;
+  $header-line-height: 55px;
+  .container {
+    width: $desktop; // background: rgba(89, 72, 241, 0.112);
+  }
+  body {
+    font-size: $text-font-size;
+    line-height: $text-line-height;
+  }
+  h2 {
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+  }
 }

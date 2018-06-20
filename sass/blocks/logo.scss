@@ -1,4 +1,12 @@
 .logo {
   width: 63px;
   height: 23px;
+  display: flex;
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    width: 99px;
+    height: 36px;
+  }
 }

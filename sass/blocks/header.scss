@@ -1,3 +1,4 @@
+@import 'variables';
 .header {
   position: absolute;
   top: 20px;
@@ -12,17 +13,29 @@
 .header__contacts {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
+}
+
+.header__address {
+  margin: 0;
+  padding: 0;
+  color: #141414;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  text-align: right;
+  margin-right: 25px;
+  display: none;
 }
 
 .header__phone {
   margin: 0;
   padding: 0;
   color: #141414;
-  font-size: 14px;
   font-weight: 300;
   line-height: 14px;
   letter-spacing: 0.7px;
   text-align: right;
+
 }
 
 .header__recall {
@@ -31,10 +44,22 @@
   text-align: right;
   color: #f5112c;
   font-family: Gilroy;
-  font-size: 14px;
   font-weight: 300;
-  line-height: 24px;
   letter-spacing: 0.7px;
-  border-bottom: 2px solid #f5112c50
+  border-bottom: 2px solid #f5112c50;
+  margin-left: 25px;
+  margin-top: 5px;
+}
 
+@media (min-width: $tablet) {
+  .header__contacts {
+    flex-direction: row;
+    align-items: center;
+    line-height: 16px;
+    justify-content: flex-end;
+  }
+
+  .header__address {
+    display: inline;
+  }
 }

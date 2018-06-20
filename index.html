@@ -10,72 +10,94 @@
 </head>
 
 <body>
-  <div class="wrapper">
 
-    <header class="header container">
-      <img class="logo header__logo" width="63" height="23" src="img/logo.svg" alt="logo">
-      <section class="header__contacts">
-        <h2 class="visually-hidden">Телефон</h2>
-        <b class="header__phone">+7 (800) 46-54-67</b>
-        <a class="header__recall" href="">Заказать звонок</a>
-      </section>
-    </header>
+  <header class="header container">
+    <a class="logo header__logo" href="">
+      <img class="logo__img" src="img/logo.svg" alt="logo">
+    </a>
+    <section class="header__contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <b class="header__address">г. Москва ул. Северная, 35</b>
+      <b class="header__phone">+7 (800) 46-54-67</b>
+      <a class="header__recall" href="">Заказать звонок</a>
+    </section>
+  </header>
 
-    <main class="main">
-      <section class="start main__start container">
-        <div class="start__picture">
-          <img class="start__main-pic" src="img/bus_mobile.jpg" width="243" height="326" alt="bus">
-          <img class="start__circle-1" src="img/circle-1.svg" width="50" height="50" alt="bus">
-          <img class="start__circle-2" src="img/circle-2.svg" width="23" height="23" alt="bus">
-        </div>
-        <h1 class="start__title">
+  <main class="main">
+    <img class="main__english-yes" src="img/english_yes.svg" alt="">
+    <section class="start main__start container">
+      <div class="start__picture">
+        <img class="start__main-pic" src="img/bus-big.png" alt="bus">
+        <img class="start__circle-1" src="img/circle-1.svg" width="50" height="50" alt="circle">
+        <img class="start__circle-2" src="img/circle-2.svg" width="23" height="23" alt="circle">
+        <img class="start__wave" src="img/wave.svg" alt="wave">
+      </div>
+      <div class="start__text">
+        <h2 class="start__title">
           <span class="start__accelerated">Ускоренный</span>
           <br>2-месячный курс
-          <br>английского языка</h1>
+          <br>английского языка</h2>
         <div class="stroke start__stroke"> </div>
         <p class="start__slogan">Освойте английский для путешествий и научитесь объясняться в любой ситуации</p>
         <a class="button start__button" href="">Записаться на пробное занятие</a>
-      </section>
+      </div>
+    </section>
 
-      <section class="situation main__situation">
-        <div class="container">
-          <p class="situation__question">?</p>
-          <h2 class="situation__slogan">Бывали ли вы
-            <br> в подобных ситауциях
-          </h2>
-          <ul class="situation__list">
-            <li class="situation__item">
-              <p class="situation__number">01
+    <section class="situation main__situation">
+      <div class="container">
+        <p class="situation__question">?</p>
+        <h2 class="situation__slogan">Бывали ли вы
+          <br> в подобных ситауциях
+        </h2>
+        <ul class="situation__list">
+
+          <li class="situation__item">
+            <div class="situation__wrapper">
+              <p class="situation__number situation__number--left">01
                 <span class="situation__dot">.</span>
               </p>
-              <p class="situation__text">Вы думали, что знаете английский, но в гостинице с трудом выговариваете, какой номер вам нужен</p>
-              <img class="situation__image" src="img/situation-1-mobile.jpg" alt="situation photo 1">
-            </li>
-            <li class="situation__item">
+              <p class="situation__text situation__text--left">Вы думали, что знаете английский, но в гостинице с трудом выговариваете, какой номер вам нужен</p>
+            </div>
+            <img class="situation__image" src="img/situation-1-mobile.jpg" alt="situation photo 1">
+          </li>
+
+          <li class="situation__item">
+            <div class="situation__wrapper">
               <p class="situation__number">02
                 <span class="situation__dot">.</span>
               </p>
               <p class="situation__text">Вы смогли спросить, до какой станции метро нужно дойти, но не поняли, куда вас отправили</p>
-              <img class="situation__image" src="img/situation-2-mobile.jpg" alt="situation photo 1">
-            </li>
-            <li class="situation__item">
-              <p class="situation__number">03
+            </div>
+            <img class="situation__image situation__image--left" src="img/situation-2-mobile.jpg" alt="situation photo 1">
+          </li>
+
+          <li class="situation__item">
+            <div class="situation__wrapper">
+              <p class="situation__number situation__number--left">03
                 <span class="situation__dot">.</span>
               </p>
-              <p class="situation__text">В аэропорту при любом подозрении на задрежку, вы ищите представителя, хоть как-то говоряшего по-русски</p>
-              <img class="situation__image" src="img/situation-3-mobile.jpg" alt="situation photo 1">
-            </li>
-            <li class="situation__item">
+              <p class="situation__text situation__text--left">В аэропорту при любом подозрении на задрежку, вы ищите представителя, хоть как-то говоряшего по-русски</p>
+            </div>
+            <img class="situation__image" src="img/situation-3-mobile.jpg" alt="situation photo 1">
+          </li>
+
+          <li class="situation__item">
+            <div class="situation__wrapper">
               <p class="situation__number">в итоге...</p>
               <p class="situation__text">Все это портит впечатление от отдыха и отбивает желание посещать новые страны</p>
-              <img class="situation__image" src="img/situation-final-mobile.jpg" alt="situation photo 1">
-            </li>
-          </ul>
-        </div>
-      </section>
+            </div>
+            <img class="situation__image situation__image--left" src="img/situation-final-mobile.jpg" alt="situation photo 1">
+          </li>
 
-      <section class="predict main__predict container">
-        <h2 class="predict__title">Мы предусмотрели эти ситуации</h2>
+        </ul>
+      </div>
+    </section>
+
+    <section class="predict main__predict">
+      <!-- <img class="predict__img" src="img/predict.png" alt="predict__img"> -->
+      <div class="container">
+        <h2 class="predict__title">Мы предусмотрели
+          <br>эти ситуации</h2>
         <div class="stroke predict__stroke"> </div>
         <ul class="predict__list">
           <li class="predict__item">
@@ -93,9 +115,21 @@
             <p class="predict__value">Проводим диалоги с преподавателями и носителями языка</p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="teachers main__teachers container">
+    <section class="teachers main__teachers">
+      <div class="teachers__decor">
+        <img class="teachers__wave" src="img/wave.svg" alt="wave">
+        <div class="teachers__line">
+          <div class="teachers__line-circle"></div>
+        </div>
+        <div class="teachers__donut"> </div>
+        <img class="teachers__wave-4" src="img/wave-4.svg" alt="wave">
+
+      </div>
+
+      <div class="container">
         <h2 class="teachers__title">Кто ведет курс</h2>
         <ul class="teachers__list">
           <li class="teachers__item">
@@ -122,12 +156,24 @@
               Евгений жил в г. Сиэтл (США).</p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="bigben main__bigben">
-      </section>
+    <section class="bigben main__bigben">
+      <img class="bigben__wave" src="img/wave.svg" alt="wave">
+      <div class="bigben__blue-donut"> </div>
+      <div class="bigben__gray-donut"> </div>
 
-      <section class="included main__included container">
+    </section>
+
+    <section class="included main__included container">
+      <div class="included__wrapper">
+
+        <img class="included__bigben" src="img/bigben-tablet.png" alt="bigben">
+        <img class="included__wave" src="img/wave.svg" alt="wave">
+        <div class="included__blue-donut"> </div>
+        <div class="included__gray-donut"> </div>
+
         <h2 class="included__title">что входит в стоимость</h2>
         <div class="stroke included__stroke"> </div>
         <p class="included__price">21 000 рублей</p>
@@ -170,121 +216,148 @@
             <p class="included__event">Разбор непредвиденных случаев (потеря документов, обращение в полицию, скорую)</p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="process main__process container">
-        <h2 class="process__title">Как все будет проходить
+    <section class="process main__process">
+      <div class="container">
+          <!-- <div class="process__bg"></div> -->
+
+        <h2 class="process__title">Как все будет
+          <br> проходить
         </h2>
         <div class="stroke process__stroke"> </div>
         <ul class="process__list">
           <li class="process__item">
-            <b class="process__feature">Простое запоминание</b>
-            <p class="process__text">Слова запоминаются в результате упрощенных техник и применения в спонтанных ситуациях, а не посредством зубрежки</p>
+            <div class="process__text-wrapper">
+              <b class="process__feature">Простое запоминание</b>
+              <p class="process__text">Слова запоминаются в результате упрощенных техник и применения в спонтанных ситуациях, а не посредством зубрежки</p>
+            </div>
             <img class="process__image" src="img/process-1.jpg" alt="process__image">
           </li>
           <li class="process__item">
-            <b class="process__feature">Импровизация и диалоги</b>
-            <p class="process__text">Форма импровизации позволяет подготовиться к ситуации, когда шаблонные ответы будут неприменимы</p>
-            <img class="process__image" src="img/process-2.jpg" alt="process__image">
+            <div class="process__text-wrapper">
+              <b class="process__feature">Импровизация и диалоги</b>
+              <p class="process__text">Форма импровизации позволяет подготовиться к ситуации, когда шаблонные ответы будут неприменимы</p>
+            </div>
+            <img class="process__image process__image--left" src="img/process-2.jpg" alt="process__image">
           </li>
           <li class="process__item">
-            <b class="process__feature">Говорим и слушаем</b>
-            <p class="process__text">Прослушивание себя и профессионалов позволит научиться воспринимать чужую речь на слух</p>
+            <div class="process__text-wrapper">
+              <b class="process__feature">Говорим и слушаем</b>
+              <p class="process__text">Прослушивание себя и профессионалов позволит научиться воспринимать чужую речь на слух</p>
+            </div>
             <img class="process__image" src="img/process-3.jpg" alt="process__image">
           </li>
           <li class="process__item">
-            <b class="process__feature">Повторение</b>
-            <p class="process__text">Каждое следующее занятие включает в себя закрепление предыдущих тем и создает базу для прохождения следующих</p>
-            <img class="process__image" src="img/process-4.jpg" alt="process__image">
+            <div class="process__text-wrapper">
+              <b class="process__feature">Повторение</b>
+              <p class="process__text">Каждое следующее занятие включает в себя закрепление предыдущих тем и создает базу для прохождения следующих</p>
+            </div>
+            <img class="process__image process__image--left" src="img/process-4.jpg" alt="process__image">
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="reviews main__reviews container">
-        <h2 class="reviews__title">Отзывы студентов</h2>
-        <div class="stroke reviews__stroke"> </div>
+    <section class="reviews main__reviews container">
+      <h2 class="reviews__title">Отзывы студентов</h2>
+      <div class="stroke reviews__stroke"> </div>
 
-        <div class="slider reviews__slider">
-          <ul class="slider__list reviews__list">
-            <li class="slider__item reviews__item">
-              <img class="reviews__photo" src="img/reviews-1.jpg" width="156" height="157" alt="reviews__photo">
+      <div class="slider reviews__slider">
+        <ul class="slider__list reviews__list">
+          <li class="slider__item reviews__item">
+            <img class="reviews__photo" src="img/reviews-1.jpg" width="156" height="157" alt="reviews__photo">
+            <div class="reviews__text-wrapper">
               <b class="reviews__name">Александра Иванова</b>
               <p class="reviews__text">Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела
                 Алла, Настя и Женя приходили к нам для нарабатывания практики общения. Неделю назад были с мужем в Лондоне
                 - хоть люди разные и речь у всех разная, но было так легко и спокойно! Мы ни разу не заблудились, в аэропорту
                 меня водила за собой пожилая пара в качестве переводчика. Спасибо вам, это было очень полезно!</p>
               <a class="reviews__link" href="">Вконтакте</a>
-            </li>
-            <li class="slider__item reviews__item slider__item--active">
-              <img class="reviews__photo" src="img/reviews-1.jpg" width="156" height="157" alt="reviews__photo">
+            </div>
+          </li>
+          <li class="slider__item reviews__item slider__item--active">
+            <img class="reviews__photo" src="img/reviews-1.jpg" width="156" height="157" alt="reviews__photo">
+            <div class="reviews__text-wrapper">
               <b class="reviews__name">Александра Иванова</b>
               <p class="reviews__text">Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела
                 Алла, Настя и Женя приходили к нам для нарабатывания практики общения. Неделю назад были с мужем в Лондоне
                 - хоть люди разные и речь у всех разная, но было так легко и спокойно! Мы ни разу не заблудились, в аэропорту
                 меня водила за собой пожилая пара в качестве переводчика. Спасибо вам, это было очень полезно!</p>
               <a class="reviews__link" href="">Вконтакте</a>
-            </li>
-            <li class="slider__item reviews__item">
-              <img class="reviews__photo" src="img/reviews-1.jpg" width="156" height="157" alt="reviews__photo">
+            </div>
+          </li>
+          <li class="slider__item reviews__item">
+            <img class="reviews__photo" src="img/reviews-1.jpg" width="156" height="157" alt="reviews__photo">
+            <div class="reviews__text-wrapper">
               <b class="reviews__name">Александра Иванова</b>
               <p class="reviews__text">Курс прошел незаметно и оставил после себя только хорошие воспоминания. Нашу группу на постоянной основе вела
                 Алла, Настя и Женя приходили к нам для нарабатывания практики общения. Неделю назад были с мужем в Лондоне
                 - хоть люди разные и речь у всех разная, но было так легко и спокойно! Мы ни разу не заблудились, в аэропорту
                 меня водила за собой пожилая пара в качестве переводчика. Спасибо вам, это было очень полезно!</p>
               <a class="reviews__link" href="">Вконтакте</a>
-            </li>
-          </ul>
-          <div class="slider__controls">
-            <button class="slider__button"></button>
-            <button class="slider__button slider__button--active"></button>
-            <button class="slider__button"></button>
-          </div>
+            </div>
+          </li>
+        </ul>
+        <div class="slider__controls">
+          <button class="slider__button"></button>
+          <button class="slider__button slider__button--active"></button>
+          <button class="slider__button"></button>
         </div>
-      </section>
-
-      <section class="free main__free">
-        <div class="free__picture">
-          <img class="free__wave-1" src="img/wave.svg" alt="cloud">
-          <img class="free__wave-2" src="img/wave.svg" alt="cloud">
-          <img class="free__circle-1" src="img/blue-circle-1.svg" alt="circle">
-          <img class="free__circle-2" src="img/blue-circle-2.svg" alt="circle">
+        <div class="slider__controls--line">
+          <div class="slider__pin"></div>
         </div>
+      </div>
+    </section>
 
-        <div class="container">
-          <h2 class="free__title">бесплатное
-            <br> пробное занятие</h2>
-          <div class="stroke free_stroke"> </div>
-          <p class="free__text">Приходите на бесплатное первое занятие по теме “аэропорт” и ощутите пользу сразу!</p>
-          <button class="button free__button">Записаться на пробное занятие</button>
-        </div>
-      </section>
+    <section class="free main__free container">
+      <div class="free__picture">
+        <img class="free__wave-1" src="img/wave.svg" alt="cloud">
+        <img class="free__wave-2" src="img/wave.svg" alt="cloud">
+        <img class="free__circle-1" src="img/blue-circle-1.svg" alt="circle">
+        <img class="free__circle-2" src="img/blue-circle-2.svg" alt="circle">
+      </div>
 
-      <footer class="footer main__footer">
-        <div class="container footer__container">
+      <div class="free__wrapper">
+        <h2 class="free__title">бесплатное
+          <br> пробное занятие</h2>
+        <div class="stroke free_stroke"> </div>
+        <p class="free__text">Приходите на бесплатное первое занятие по теме “аэропорт” и ощутите пользу сразу!</p>
+        <button class="button free__button">Записаться на пробное занятие</button>
+      </div>
+    </section>
+
+    <footer class="footer main__footer">
+      <div class="container footer__container">
+
+        <div class="footer__wrapper-1">
           <img class="logo footer__logo" width="63" height="23" src="img/logo.svg" alt="logo">
           <p class="footer__address">Школа Английского Языка
             <br> г. Москва ул. Северная, 35</p>
+        </div>
+        <div class="footer__wrapper-2">
 
           <section class="social footer__social">
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link" href="">
-                  <img class="social__icon" src="img/vk.svg" alt="VK">
+                  <img class="social__icon" src="img/vk.svg" width="40" height="23" alt="VK">
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="">
-                  <img class="social__icon" src="img/insta.svg" alt="Instagram">
+                  <img class="social__icon" src="img/insta.svg" width="28" height="28" alt="Instagram">
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="">
-                  <img class="social__icon" src="img/yt.svg" alt="Youtube">
+                  <img class="social__icon" src="img/yt.svg" width="27" height="33" alt="Youtube">
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link" href="">
-                  <img class="social__icon" src="img/ok.svg" alt="Odnoklassniki">
+                  <img class="social__icon" src="img/ok.svg" width="19" height="33" alt="Odnoklassniki">
                 </a>
               </li>
             </ul>
@@ -293,10 +366,11 @@
           <p class="footer__phone">+7 (800) 46-54-67</p>
           <a class="footer__recall" href="">Заказать звонок</a>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-    </main>
-  </div>
+  </main>
+
 
 </body>
 
